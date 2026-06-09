@@ -1,7 +1,9 @@
-[x] Backend routes 
+[x] Backend routes
 
 [x] Backend logic
 
-[] Frontend 
+[] Frontend
+
+[] Add README at root
 
 [] Backend move validation to middleware(Good to have)
