@@ -6,7 +6,8 @@ let nextId = 1;
 
 const statusAllowed = ["todo", "done"];
 export function getAllTasks(req: Request, res: Response) {
-  res.status(200).json(tasksData);
+  res.status(404).json({ error: "Task not found." });
+  // res.status(200).json(tasksData);
 }
 export function createTask(req: Request, res: Response) {
   const data = req.body;

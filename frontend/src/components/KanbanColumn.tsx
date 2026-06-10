@@ -4,18 +4,20 @@ import TaskCard from "./TaskCard";
 type Props = {
   title: string;
   tasks: Task[];
-  onToggleStatus: (task: Task) => void;
+  onMoveTask: (task: Task) => void;
   onDelete: (id: number) => void;
+  message: string;
 };
 
 export default function KanbanColumn({
   title,
   tasks,
-  onToggleStatus,
+  onMoveTask,
   onDelete,
+  message,
 }: Props) {
   return (
-    <section className="flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm">
+    <section className="max-w-md sm:min-w-sm flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm">
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
 
@@ -30,13 +32,13 @@ export default function KanbanColumn({
             <TaskCard
               key={task.id}
               task={task}
-              onToggleStatus={onToggleStatus}
+              onMoveTask={onMoveTask}
               onDelete={onDelete}
             />
           ))
         ) : (
           <div className="rounded-lg border border-dashed border-gray-300 p-6 text-center text-sm text-gray-500">
-            No tasks yet
+            {message}
           </div>
         )}
       </div>
