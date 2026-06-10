@@ -4,7 +4,7 @@ A full-stack Kanban board to create, organize, and track tasks.
 
 ## Live Demo
 - Frontend: https://mini-kanban-app-delta.vercel.app
-- Backend: https://mini-kanban-app.onrender.com/health
+- Backend: https://mini-kanban-app.onrender.com
 
 ## Tech Stack
 - **Frontend:** React, TypeScript, Tailwind CSS, Axios

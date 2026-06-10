@@ -15,7 +15,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 // Adds headers: Access-Control-Allow-Origin: http://example.com, Vary: Origin
 
-app.use("/", router);
 app.get("/health", (_req, res) => {
   res.status(200).json({
     status: "ok",
@@ -23,7 +22,10 @@ app.get("/health", (_req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
-
+app.get("/", (_req, res) => {
+  res.status(200).json({ message: "Kanban API is running." });
+});
+app.use("/", router);
 app.listen(PORT, function () {
   console.log(`Server listening on port ${PORT}`);
 });
