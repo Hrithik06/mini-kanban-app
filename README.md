@@ -3,8 +3,8 @@
 A full-stack Kanban board to create, organize, and track tasks.
 
 ## Live Demo
-- Frontend: [your-vercel-url]
-- Backend: [your-render-url]
+- Frontend: https://mini-kanban-app-delta.vercel.app
+- Backend: https://mini-kanban-app.onrender.com/health
 
 ## Tech Stack
 - **Frontend:** React, TypeScript, Tailwind CSS, Axios
@@ -25,7 +25,7 @@ A full-stack Kanban board to create, organize, and track tasks.
 ### Setup
 ```bash
 # Clone the repo
-git clone [your-repo-url]
+git clone https://github.com/Hrithik06/mini-kanban-app
 
 # Install root dependencies (for concurrently)
 pnpm install

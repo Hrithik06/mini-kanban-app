@@ -2,10 +2,10 @@
 
 [x] Backend logic
 
-[] Frontend
+[x] Frontend
 
-[] Have min and max width for cards
+[x] Have min and max width for cards
 
-[] Add README at root
+[x] Add README at root
 
 [] Backend move validation to middleware(Good to have)

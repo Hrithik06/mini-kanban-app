@@ -34,7 +34,7 @@ export function updateTask(req: Request, res: Response) {
     res.status(400).json({ error: "Invalid ID, not a number." });
   } else if (updateStatus === undefined) {
     res.status(400).json({ error: "Status is missing from request body." });
-  } else if (!updateStatus || typeof updateStatus !== "string") {
+  } else if (typeof updateStatus !== "string" || !updateStatus.trim()) {
     res.status(400).json({ error: "Status must be a non-empty string." });
   } else if (!statusAllowed.includes(updateStatus)) {
     res.status(400).json({ error: "Status must be 'todo' or 'done'." });
