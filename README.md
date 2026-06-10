@@ -50,3 +50,7 @@ VITE_API_URL=http://localhost:3000
 PORT = 7777
 CLIENT_URL = http://localhost:5173
 ```
+## Future Improvements
+- Validation middleware (replace controller-level if/else chains)
+- Persist tasks with a database
+- Drag and drop between columns
