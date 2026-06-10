@@ -17,8 +17,8 @@ export default function KanbanColumn({
   message,
 }: Props) {
   return (
-    <section className="max-w-md sm:min-w-sm flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm">
-      <div className="mb-4 flex items-center justify-between">
+    <section className="w-full max-w-md mx-auto flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm">
+      <div className="mb-4 flex items-center justify-between border-b border-gray-200 pb-3">
         <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
 
         <span className="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-600 shadow-sm">
@@ -26,7 +26,7 @@ export default function KanbanColumn({
         </span>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex min-h-[300px] flex-col gap-3">
         {tasks.length > 0 ? (
           tasks.map((task) => (
             <TaskCard

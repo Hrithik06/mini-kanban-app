@@ -1,0 +1,14 @@
+{
+  "name": "kanban-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd backend && pnpm dev\" \"cd frontend && pnpm dev\"",
+    "dev:backend": "cd backend && pnpm dev",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "build:backend": "cd backend && pnpm build",
+    "build:frontend": "cd frontend && pnpm build"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
